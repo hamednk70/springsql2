@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Parlo - eCommerce Bootstrap 4 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <!--    <div th:replace="/header :: header">-->
+
+</div>
+<div class="container">
+    <div class="row">
+
+        <form th:action="@{'/step2'}" method="post">
+            <div class="alert alert-primary" role="alert">
+            </div>
+            <input type="text" name="id" placeholder="id" id="id">
+            <input type="text" name="value" placeholder="value" id="value" required>
+            <div class="button-box">
+
+                <button type="submit">ADD</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<footer class="footer-area bg-paleturquoise">
+    <div class="container">
+        <div class="footer-top text-center pt-45 pb-45">
+            <nav>
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#">Shop </a></li>
+                    <li><a href="#">Accessories </a></li>
+                    <li><a href="#">Contact </a></li>
+                    <li><a href="#">About </a></li>
+                    <li><a href="#">Blog </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="footer-bottom border-top-1 pt-20">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-5 col-12">
+                    <div class="footer-social pb-20">
+                        <a href="#">Facebok</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Linkedin</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="copyright text-center pb-20">
+                        <p>Copyright © All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-12">
+                    <div class="payment-mathod pb-20">
+                        <a href="#"><img src="assets/img/icon-img/payment.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+
+<!-- All JS is here
+============================================ -->
+
+<!-- jQuery JS -->
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<!-- Popper JS -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Plugins JS -->
+<script src="assets/js/plugins.js"></script>
+<!-- Ajax Mail -->
+<script src="assets/js/ajax-mail.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#validationCustom01').focus()
+    });
+</script>
+
+</body>
+
+</html>
