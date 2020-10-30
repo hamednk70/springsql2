@@ -1,5 +1,4 @@
 package com.demis.springsql.demo.service;
-
 import com.demis.springsql.demo.model.Customer;
 import com.demis.springsql.demo.model.Department;
 import org.junit.jupiter.api.Test;
@@ -18,6 +17,12 @@ class CustomerServiceImplTest {
 
     @Test
     void findDepartment() {
+        //this is tst
+    }
+
+    @Test
+    String findDepartmtyent() {
+        return "sfsdgf";
 
 
     }
